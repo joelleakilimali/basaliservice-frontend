@@ -1,0 +1,25 @@
+.containerService {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 120px;
+  align-items: center;
+  padding: 20px;
+}
+
+.list-item {
+  background-color: #333;
+  color: white;
+  padding: 20px;
+  margin-bottom: 10px;
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
+  cursor: pointer;
+}
+
+.list-item.active {
+  background-color: #555;
+}
+
+.list-item:hover {
+  background-color: #555;
+}
