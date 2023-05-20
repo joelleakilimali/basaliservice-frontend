@@ -12,16 +12,20 @@ const AboutUsPage = () => {
       <div className="bg-gradient-to-r from-black to-gray-900 min-h-screen text-white">
         <h1 className="heading p-10 text-yellow-400  ">A propos de Nous</h1>
         <div className="content">
-          <h2 className="section-heading text-yellow-400">Qui sommes-nous ?</h2>
-          <p className=" w-[50%] text-xl">
-            We are a team of dedicated professionals passionate about delivering
-            high-quality services to our clients. With years of experience and
-            expertise, we strive to exceed expectations and provide exceptional
-            solutions for your needs.
-          </p>
-          <div className="flex flex-col">
+          <div className="flex flex-col  ">
+            <h2 className="section-heading text-yellow-400">
+              Qui sommes-nous ?
+            </h2>
+            <p className=" text-xl mx-48">
+              We are a team of dedicated professionals passionate about
+              delivering high-quality services to our clients. With years of
+              experience and expertise, we strive to exceed expectations and
+              provide exceptional solutions for your needs.
+            </p>
+          </div>
+          <div className="flex flex-col  ">
             <h2 className="section-heading text-yellow-400">Notre Mission </h2>
-            <p className=" w-[50%] text-xl ">
+            <p className="  text-xl mx-48">
               Our mission is to provide innovative and reliable solutions that
               empower businesses to succeed. We aim to build strong and
               long-lasting relationships with our clients by delivering

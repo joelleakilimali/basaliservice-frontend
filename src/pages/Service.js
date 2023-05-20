@@ -30,7 +30,7 @@ function Service() {
       prixCinquantaine: 200,
     },
     {
-      service: "Talk show",
+      service: "Service Securite",
       prixUnitaire: 5.0,
       prixVintaine: 80.0,
       prixCinquantaine: 200,

@@ -43,8 +43,8 @@ function Navbar() {
           </Link>
         </li>
         <li className="navbar__link">
-          <Link to="/service" style={{ textDecoration: "none" }}>
-            Services
+          <Link to="/tarifs" style={{ textDecoration: "none" }}>
+            Tarifs
           </Link>
         </li>
         <li className="navbar__link">

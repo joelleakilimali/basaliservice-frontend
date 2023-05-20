@@ -5,8 +5,10 @@ import Footer from "../components/Footer";
 import Slider from "react-slick";
 
 function AlbumPage() {
-  const [selectedPicture, setSelectedPicture] = useState(null);
+  //const [selectedPicture, setSelectedPicture] = useState(null);
   const images = [
+    "/assets/wed1.jpg",
+    "/assets/wed2.jpg",
     "/assets/wedd.jpg",
     "/assets/deco2.jpg",
     "/assets/logo.jpg",
@@ -15,6 +17,7 @@ function AlbumPage() {
     "/assets/imagevow.jpg",
   ];
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
+  const [selectedPicture, setSelectedPicture] = useState(images[0]);
 
   const handlePictureClick = (index) => {
     setSelectedPicture(images[index]);
@@ -42,7 +45,11 @@ function AlbumPage() {
     speed: 500,
     slidesToShow: 1,
     slidesToScroll: 1,
-    afterChange: (index) => setSelectedPicture(images[index]),
+    initialSlide: 0, // Set the first image as default
+    afterChange: (index) => {
+      setCurrentImageIndex(index);
+      setSelectedPicture(images[index]);
+    },
   };
 
   return (
@@ -52,12 +59,12 @@ function AlbumPage() {
       </div>
       <div className="bg-gradient-to-r from-black to-gray-900 min-h-screen text-gray-200 relative">
         <h1 className="text-white font-bold text-3xl py-10">Nos Photos</h1>
-        <div className="pictures-container" style={{ marginTop: "100px" }}>
+        <div className="pictures-container">
           <Slider {...settings}>
             {images.map((image, index) => (
               <div
                 key={index}
-                className={`  slider-image ${
+                className={`slider-image ${
                   currentImageIndex === index ? "active" : ""
                 }`}
                 onClick={() => handlePictureClick(index)}
@@ -65,42 +72,23 @@ function AlbumPage() {
                 <img
                   src={image}
                   alt="photo_mariage"
-                  style={{
-                    width: "200px",
-                    position: "absolute",
-                    margin: "10px",
-                  }}
+                  className="slider-image-img"
                 />
               </div>
             ))}
           </Slider>
-        </div>
-
-        {selectedPicture && (
-          <div className="picture-modal w-[80%] h-[20%] flex flex-col">
-            <div
-              className="picture-modal-content"
-              style={{
-                backgroundImage: `url(${selectedPicture})`,
-                backgroundRepeat: "no-repeat",
-              }}
-            >
-              <button
-                className="close-btn p-10 text-xl text-yellow-600 "
-                onClick={handleCloseClick}
+          {selectedPicture && (
+            <div className="picture-modal">
+              <div
+                className="picture-modal-content"
+                style={{ backgroundImage: `url(${selectedPicture})` }}
               >
-                Fermer
-              </button>
+                <button className="close-btn" onClick={handleCloseClick}>
+                  Fermer l'album
+                </button>
+              </div>
             </div>
-          </div>
-        )}
-        <div className="carousel-controls text-yellow-400 flex justify-between px-24">
-          <button onClick={handlePrevClick} className="cursor-pointer">
-            Previous
-          </button>
-          <button onClick={handleNextClick} className="cursor-pointer">
-            Next
-          </button>
+          )}
         </div>
       </div>
       <div>
