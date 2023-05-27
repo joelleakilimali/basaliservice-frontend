@@ -10,6 +10,9 @@ import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
 import AlbumPage from "./pages/Album";
 import Service from "./pages/Service";
 import AboutUsPage from "./pages/AboutUs";
+import ServiceParticulier from "./pages/ServiceParticulier";
+import ServiceSecurite from "./pages/ServiceSecurite";
+import ServiceDecoration from "./pages/ServiceDecoration";
 function App() {
   return (
     <div className="App">
@@ -19,6 +22,9 @@ function App() {
           <Route path="/album" element={<AlbumPage />} />
           <Route path="/tarifs" element={<Service />} />
           <Route path="/apropos" element={<AboutUsPage />} />
+          <Route path="/protocolat" element={<ServiceParticulier />} />
+          <Route path="/securite" element={<ServiceSecurite />} />
+          <Route path="/decoration" element={<ServiceDecoration />} />
         </Routes>
       </Router>
     </div>

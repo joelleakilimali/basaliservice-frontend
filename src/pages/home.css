@@ -38,3 +38,42 @@
 .singleProcol {
   width: 100%;
 }
+
+.singleProtocol .custom-card {
+  background-color: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+}
+
+.singleProtocol .custom-card:hover {
+  transform: scale(1.02);
+  transition: transform 0.3s ease-in-out;
+}
+
+.singleProtocol .custom-card .ant-card-cover img {
+  height: 300px;
+  object-fit: cover;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+}
+
+.singleProtocol .custom-card .ant-card-actions {
+  display: flex;
+  justify-content: center;
+}
+
+.singleProtocol .custom-card .ant-card-actions > li {
+  margin: 0;
+}
+
+.singleProtocol .custom-card .ant-card-actions > li > .ant-btn {
+  border-radius: 4px;
+  background-color: #faad14;
+  color: #ffffff;
+  border-color: #faad14;
+}
+
+.singleProtocol .custom-card .ant-card-actions > li > .ant-btn:hover {
+  background-color: #fadb14;
+  border-color: #fadb14;
+}
