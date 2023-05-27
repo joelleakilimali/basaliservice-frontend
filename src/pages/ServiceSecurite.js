@@ -21,7 +21,7 @@ function ServiceSecurite() {
           >
             <div style={{ display: "flex" }}>
               <h1
-                className="p-5 text-9xl"
+                className="p-5 text-8xl"
                 style={{
                   color: "white",
                   textAlign: "center",
