@@ -73,22 +73,22 @@ function ServiceSecurite() {
                 }}
               >
                 <Image
-                  src="./assets/security3.jpg"
+                  src="./assets/BSprotocol19.jpg"
                   alt="Wedding"
                   style={{ width: "100%", height: "200px", objectFit: "cover" }}
                 />
                 <Image
-                  src="./assets/security4.jpg"
+                  src="./assets/BSprotocol10.jpg"
                   alt="Wedding"
                   style={{ width: "100%", height: "200px", objectFit: "cover" }}
                 />
                 <Image
-                  src="./assets/security1.jfif"
+                  src="./assets/BSprotocol11.jpg"
                   alt="Wedding"
                   style={{ width: "100%", height: "200px", objectFit: "cover" }}
                 />
                 <Image
-                  src="./assets/security6.jpg"
+                  src="./assets/BSprotocol17.jpg"
                   alt="Wedding"
                   style={{ width: "100%", height: "200px", objectFit: "cover" }}
                 />

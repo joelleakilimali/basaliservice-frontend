@@ -68,22 +68,22 @@ function ServiceParticulier() {
                 }}
               >
                 <Image
-                  src="./assets/protocol4.jfif"
+                  src="./assets/BSprotocol.jpg"
                   alt="Wedding"
                   style={{ width: "100%", height: "200px", objectFit: "cover" }}
                 />
                 <Image
-                  src="./assets/protocol2.jpg"
+                  src="./assets/BSprotocol12.jpg"
                   alt="Wedding"
                   style={{ width: "100%", height: "200px", objectFit: "cover" }}
                 />
                 <Image
-                  src="./assets/protocol1.jfif"
+                  src="./assets/BSprotocol17.jpg"
                   alt="Wedding"
                   style={{ width: "100%", height: "200px", objectFit: "cover" }}
                 />
                 <Image
-                  src="./assets/protocol3.jfif"
+                  src="./assets/BSprotocol6.jpg"
                   alt="Wedding"
                   style={{ width: "100%", height: "200px", objectFit: "cover" }}
                 />

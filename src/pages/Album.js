@@ -7,14 +7,23 @@ import Slider from "react-slick";
 function AlbumPage() {
   //const [selectedPicture, setSelectedPicture] = useState(null);
   const images = [
-    "/assets/wed1.jpg",
-    "/assets/wed2.jpg",
-    "/assets/wedd.jpg",
-    "/assets/deco2.jpg",
     "/assets/logo.jpg",
-    "/assets/deco.jpg",
-    "/assets/logo.jpg",
-    "/assets/imagevow.jpg",
+    "/assets/BSprotocol13.jpg",
+    "/assets/BSprotocol8.jpg",
+    "/assets/BSprotocol.jpg",
+    "/assets/BSprotocol3.jpg",
+    "/assets/BSprotocol5.jpg",
+    "/assets/BSprotocol6.jpg",
+    "/assets/BSprotocol7.jpg",
+    "/assets/BSprotocol9.jpg",
+    "/assets/BSprotocol10.jpg",
+    "/assets/BSprotocol11.jpg",
+    "/assets/BSprotocol12.jpg",
+    "/assets/BSprotocol14.jpg",
+    "/assets/BSprotocol15.jpg",
+    "/assets/BSprotocol16.jpg",
+    "/assets/BSprotocol17.jpg",
+    "/assets/BSprotocol19.jpg",
   ];
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
   const [selectedPicture, setSelectedPicture] = useState(images[0]);
@@ -22,11 +31,6 @@ function AlbumPage() {
   const handlePictureClick = (index) => {
     setSelectedPicture(images[index]);
   };
-
-  const handleCloseClick = () => {
-    setSelectedPicture(null);
-  };
-
   const handleNextClick = () => {
     setCurrentImageIndex((prevIndex) =>
       prevIndex === images.length - 1 ? 0 : prevIndex + 1
@@ -60,6 +64,12 @@ function AlbumPage() {
       <div className="bg-gradient-to-r from-black to-gray-900 min-h-screen text-gray-200 relative">
         <h1 className="text-white font-bold text-3xl py-10">Nos Photos</h1>
         <div className="pictures-container">
+          <div className="picture-modal">
+            <div
+              className="picture-modal-content"
+              style={{ backgroundImage: `url(${selectedPicture})` }}
+            ></div>
+          </div>
           <Slider {...settings}>
             {images.map((image, index) => (
               <div
@@ -77,18 +87,6 @@ function AlbumPage() {
               </div>
             ))}
           </Slider>
-          {selectedPicture && (
-            <div className="picture-modal">
-              <div
-                className="picture-modal-content"
-                style={{ backgroundImage: `url(${selectedPicture})` }}
-              >
-                <button className="close-btn" onClick={handleCloseClick}>
-                  Fermer l'album
-                </button>
-              </div>
-            </div>
-          )}
         </div>
       </div>
       <div>

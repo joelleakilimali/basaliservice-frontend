@@ -51,8 +51,8 @@
 }
 
 .singleProtocol .custom-card .ant-card-cover img {
-  height: 300px;
-  object-fit: cover;
+  height: 500px;
+  object-fit: fill;
   border-top-left-radius: 8px;
   border-top-right-radius: 8px;
 }

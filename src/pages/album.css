@@ -22,14 +22,17 @@
   align-items: center;
   justify-content: center;
   position: absolute;
-  bottom: 10px;
+  bottom: -10px;
   left: 50%;
   transform: translateX(-50%);
 }
 
 .slick-dots li {
   list-style-type: none;
-  margin: 0 5px;
+  float: left;
+  width: 5em;
+  text-align: center;
+  margin-left: -2.5em;
 }
 
 .slick-prev,
@@ -55,7 +58,6 @@
 }
 
 .picture-modal {
-  position: fixed;
   top: 0;
   left: 0;
   width: 100%;
@@ -63,25 +65,14 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  z-index: 999;
   background-color: rgba(0, 0, 0, 0.8);
 }
 
-.picture-modal-content {
+.picture-modal-content{
   background-repeat: no-repeat;
   background-size: contain;
   background-position: center;
   padding: 20px;
-  width: 50%;
-  height: 50%;
-}
-.close-btn {
-  position: absolute;
-  top: 10px;
-  right: 10px;
-  color: #f9ca24;
-  background: none;
-  border: none;
-  font-size: 16px;
-  cursor: pointer;
+  width: 100%;
+  height: 90%;
 }

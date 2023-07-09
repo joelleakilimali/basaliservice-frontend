@@ -52,20 +52,6 @@ function Navbar() {
             About Us
           </Link>
         </li>
-        <li className="navbar__dropdown">
-          <button className="navbar__dropdown-toggle" onClick={toggleDropdown}>
-            Justine
-            <i className="fas fa-caret-down"></i>
-          </button>
-          <ul className={`navbar__dropdown-menu ${dropdownOpen ? "open" : ""}`}>
-            <li className="navbar__dropdown-menu-item">
-              <a to="#">Profile</a>
-            </li>
-            <li className="navbar__dropdown-menu-item">
-              <button onClick={handleLogout}>Logout</button>
-            </li>
-          </ul>
-        </li>
       </ul>
     </nav>
   );
