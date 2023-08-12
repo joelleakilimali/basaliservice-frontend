@@ -3,7 +3,7 @@ import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
 import { Image } from "antd";
 
-function ServiceDecoration() {
+function ServiceFilledhonneur() {
   return (
     <div>
       <Navbar />
@@ -29,7 +29,7 @@ function ServiceDecoration() {
                   fontFamily: "'Dancing Script', cursive",
                 }}
               >
-                Service Decoration
+                Fille d'honneur
               </h1>
             </div>
 
@@ -38,30 +38,28 @@ function ServiceDecoration() {
                 style={{ marginBottom: "10px" }}
                 className=" text-bold text-yellow-500 text-3xl my-5 py-8 "
               >
-                Pourquoi opter pour la Decoration avec Nous ?
+                Pourquoi opter pour le service des filles d'honneur avec Nous ?
               </h2>
               <p className="text-xl">
-                Notre équipe de décorateurs possède une vaste expérience et une
-                créativité exceptionnelle dans la création d'ambiances uniques
-                et personnalisées. Nous nous engageons à comprendre vos
-                préférences, votre vision et vos aspirations, et à les traduire
-                en une décoration de mariage qui reflète votre style et votre
-                histoire d'amour.
+                Notre équipe deS filles d'honneur possède une vaste expérience
+                et une créativité exceptionnelle dans la création d'ambiances
+                uniques et personnalisées. Nous nous engageons à comprendre vos
+                préférences, votre vision et vos aspirations, qui reflètent
+                votre style et votre histoire d'amour.
                 <p>
                   Nous attachons une grande importance aux détails et à la
-                  perfection. Chaque élément de décoration est soigneusement
-                  choisi et agencé pour créer une harmonie visuelle et une
-                  atmosphère enchanteresse. Des fleurs exquises aux éclairages
-                  captivants, nous veillons à ce que chaque détail soit pris en
-                  compte pour rendre votre mariage exceptionnel.
+                  perfection. Chaque fille d'honneur apporte une touche
+                  d'honneur particulière pour embellir votre soirée. Au rythme
+                  des mouvements de danses énergique ,nous veillons à ce que
+                  chaque détail soit pris en compte pour rendre votre mariage
+                  exceptionnel.
                 </p>
                 <p>
-                  Que vous recherchiez une décoration traditionnelle, moderne,
-                  rustique ou thématique, nous avons une large gamme d'options
-                  pour répondre à vos besoins. Nous vous offrons une sélection
-                  variée de styles, de couleurs, de motifs et de matériaux pour
-                  créer une décoration qui correspond parfaitement à vos goûts
-                  et à l'ambiance que vous souhaitez créer.
+                  Que vous recherchiez des filles d'honneur belles, énergiques,
+                  organisées, accompagnatrices. Nous vous offrons une sélection
+                  variée de styles, démoiselles d'honneur qui correspond
+                  parfaitement à vos goûts et à l'ambiance que vous souhaitez
+                  créer.
                 </p>
               </p>
             </div>
@@ -81,22 +79,22 @@ function ServiceDecoration() {
                 }}
               >
                 <Image
-                  src="./assets/decoration8.jpg"
+                  src="./assets/f1.jpg"
                   alt="Wedding"
                   style={{ width: "100%", height: "200px", objectFit: "cover" }}
                 />
                 <Image
-                  src="./assets/decoration12.jpg"
+                  src="./assets/f2.jpg"
                   alt="Wedding"
                   style={{ width: "100%", height: "200px", objectFit: "cover" }}
                 />
                 <Image
-                  src="./assets/deco22.jpg"
+                  src="./assets/f3.jpg"
                   alt="Wedding"
                   style={{ width: "100%", height: "200px", objectFit: "cover" }}
                 />
                 <Image
-                  src="./assets/decoration7.jpg"
+                  src="./assets/f4.jpg"
                   alt="Wedding"
                   style={{ width: "100%", height: "200px", objectFit: "cover" }}
                 />
@@ -201,4 +199,4 @@ function ServiceDecoration() {
   );
 }
 
-export default ServiceDecoration;
+export default ServiceFilledhonneur;

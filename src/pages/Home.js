@@ -25,15 +25,10 @@ function Home() {
           </div>
           <div className="w-full sm:w-1/2 md:w-3/5 lg:w-3/5 xl:w-3/5 text text-gray-200 text-xl flex justify-center">
             <p className="text-center ">
-              Basala service Protocol Agency est une agence de The term Lorem
-              ipsum refers to those texts which are incomprehensible, i.e. no
-              one can make any logical sense out of them, and they are created
-              with the aim of presenting to the reader only the graphic
-              features, in themselves, of a text or a visual presentation an
-              ipsum refers to those texts which are incomprehensible, i.e. no
-              one can make any logical sense out of them, and they are created
-              with the aim of presenting to the reader only the graphic
-              features, in themselves, of a text or a visual presentation an
+              Puisque l'objectif de toute personne lors de l'organisation d'une
+              activité est la réussite. C'est dans cette optique que nous sommes
+              mobilisés, par la création de cette agence pour vous épauler dans
+              toutes vos démarches pour la réussite de votre activité.
             </p>
           </div>
         </div>
@@ -55,17 +50,9 @@ function Home() {
               </div>
               <div>
                 <p>
-                  Notre service protocolaire vous accompagne ipsum refers to
-                  those texts which are incomprehensible, i.e. no one can make
-                  any logical sense out of them, and they are created with the
-                  aim of presenting to the reader only the graphic features, in
-                  themselves, of a text or a visual presentation an aim of
-                  presenting to the reader only the graphic features, in
-                  themselves, of a text or a visual presentation an aim of
-                  presenting to the reader only the graphic features, in
-                  themselves, of a text or a visual presentation an aim of
-                  presenting to the reader only the graphic features, in
-                  themselves, of a text or a visual presentation an
+                  Nous sommes toujours proche de vous pour vous accompagner à la
+                  réussite de vos manisfestations, alors n'hésitez pas de nous
+                  contacter en cas de besoin.
                 </p>
               </div>
             </div>
@@ -144,7 +131,11 @@ function Home() {
                 <Link
                   className="py-10 text-lg"
                   to="/protocolat"
-                  style={{ textDecoration: "none" }}
+                  style={{
+                    textDecoration: "none",
+                    color: "#fadb14",
+                    fontSize: 28,
+                  }}
                 >
                   Lire Plus
                 </Link>,
@@ -152,8 +143,9 @@ function Home() {
               className="custom-card"
             >
               <p>
-                one can make any logical sense out of them, and they are created
-                with the aim of presenting to the reader only the graphic
+                Personne ne rend à sa génération un service plus grand que celui
+                qui, soit par son art, soit par son existence, lui apporte le
+                don d'une certitude.
               </p>
             </Card>
           </div>
@@ -164,12 +156,16 @@ function Home() {
               title="Service de Securité"
               hoverable
               style={{ width: "100%" }}
-              cover={<img alt="example" src="./assets/BSprotocol11.jpg" />}
+              cover={<img alt="example" src="./assets/BSsecurite2.jpg" />}
               actions={[
                 <Link
                   className="py-10 text-lg"
                   to="/securite"
-                  style={{ textDecoration: "none" }}
+                  style={{
+                    textDecoration: "none",
+                    color: "#fadb14",
+                    fontSize: 28,
+                  }}
                 >
                   Lire Plus
                 </Link>,
@@ -177,8 +173,9 @@ function Home() {
               className="custom-card"
             >
               <p>
-                one can make any logical sense out of them, and they are created
-                with the aim of presenting to the reader only the graphic
+                Personne ne rend à sa génération un service plus grand que celui
+                qui, soit par son art, soit par son existence, lui apporte le
+                don d'une certitude.
               </p>
             </Card>
           </div>
@@ -195,7 +192,11 @@ function Home() {
                 <Link
                   className="py-10 text-lg"
                   to="/decoration"
-                  style={{ textDecoration: "none" }}
+                  style={{
+                    textDecoration: "none",
+                    color: "#fadb14",
+                    fontSize: 28,
+                  }}
                 >
                   Lire Plus
                 </Link>,
@@ -203,8 +204,71 @@ function Home() {
               className="custom-card"
             >
               <p>
-                one can make any logical sense out of them, and they are created
-                with the aim of presenting to the reader only the graphic
+                Personne ne rend à sa génération un service plus grand que celui
+                qui, soit par son art, soit par son existence, lui apporte le
+                don d'une certitude.
+              </p>
+            </Card>
+          </div>
+
+          <div className="singleProtocol" style={{ margin: "40px" }}>
+            <Card
+              width="100%"
+              size="900px"
+              title="Maître de cérémonie"
+              hoverable
+              style={{ width: "100%" }}
+              cover={<img alt="example" src="./assets/c1.jpg" />}
+              actions={[
+                <Link
+                  className="py-10 text-lg"
+                  to="/maitredeceremonie"
+                  style={{
+                    textDecoration: "none",
+                    color: "#fadb14",
+                    fontSize: 28,
+                  }}
+                >
+                  Lire Plus
+                </Link>,
+              ]}
+              className="custom-card"
+            >
+              <p>
+                Personne ne rend à sa génération un service plus grand que celui
+                qui, soit par son art, soit par son existence, lui apporte le
+                don d'une certitude.
+              </p>
+            </Card>
+          </div>
+
+          <div className="singleProtocol" style={{ margin: "40px" }}>
+            <Card
+              width="100%"
+              size="900px"
+              title="Fille d'honneur"
+              hoverable
+              style={{ width: "100%" }}
+              cover={<img alt="example" src="./assets/fille_d_honneur.jpg" />}
+              actions={[
+                <Link
+                  className="py-10 text-lg"
+                  to="/filled'honneur"
+                  style={{
+                    textDecoration: "none",
+                    color: "#fadb14",
+                    fontSize: 28,
+                  }}
+                >
+                  Lire Plus
+                </Link>,
+              ]}
+              className="custom-card"
+            >
+              <p>
+                Personne ne rend à sa génération un service plus grand que celui
+                qui, soit par son art, soit par son existence, lui apporte le
+                don d'une certitude.
               </p>
             </Card>
           </div>

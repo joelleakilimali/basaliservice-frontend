@@ -3,7 +3,7 @@ import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
 import { Image } from "antd";
 
-function ServiceDecoration() {
+function ServiceMaitreceremonie() {
   return (
     <div>
       <Navbar />
@@ -29,7 +29,7 @@ function ServiceDecoration() {
                   fontFamily: "'Dancing Script', cursive",
                 }}
               >
-                Service Decoration
+                Maître de Cérémonie
               </h1>
             </div>
 
@@ -38,30 +38,23 @@ function ServiceDecoration() {
                 style={{ marginBottom: "10px" }}
                 className=" text-bold text-yellow-500 text-3xl my-5 py-8 "
               >
-                Pourquoi opter pour la Decoration avec Nous ?
+                Pourquoi opter pour un Maître de cérémonie avec Nous ?
               </h2>
               <p className="text-xl">
-                Notre équipe de décorateurs possède une vaste expérience et une
-                créativité exceptionnelle dans la création d'ambiances uniques
-                et personnalisées. Nous nous engageons à comprendre vos
-                préférences, votre vision et vos aspirations, et à les traduire
-                en une décoration de mariage qui reflète votre style et votre
-                histoire d'amour.
+                Notre Maître de cérémonie est un porte-parole dans vos
+                cérémonies qui vous accompagne dans la créactivité et
+                l'animation des évenements. L'officiant construit la cérémonie
+                autours des mariés, de ce qu'ils aiment et du message qu'ils
+                souhaitent communiquer à leurs invités.
                 <p>
-                  Nous attachons une grande importance aux détails et à la
-                  perfection. Chaque élément de décoration est soigneusement
-                  choisi et agencé pour créer une harmonie visuelle et une
-                  atmosphère enchanteresse. Des fleurs exquises aux éclairages
-                  captivants, nous veillons à ce que chaque détail soit pris en
-                  compte pour rendre votre mariage exceptionnel.
+                  Nous veillerons à ce que le planning soit respecté, mais aussi
+                  pour assurer une bonne ambiance au sein de l'assistance.
                 </p>
                 <p>
-                  Que vous recherchiez une décoration traditionnelle, moderne,
-                  rustique ou thématique, nous avons une large gamme d'options
-                  pour répondre à vos besoins. Nous vous offrons une sélection
-                  variée de styles, de couleurs, de motifs et de matériaux pour
-                  créer une décoration qui correspond parfaitement à vos goûts
-                  et à l'ambiance que vous souhaitez créer.
+                  Que vous recherchiez un maître de cérémonie pour vos
+                  activités, Nous avons une équipe de professionels dont le
+                  travail sera remarqué dans le bon déroulement de l'événement
+                  ainsi qu'à l'animation.
                 </p>
               </p>
             </div>
@@ -81,22 +74,22 @@ function ServiceDecoration() {
                 }}
               >
                 <Image
-                  src="./assets/decoration8.jpg"
+                  src="./assets/c1.jpg"
                   alt="Wedding"
                   style={{ width: "100%", height: "200px", objectFit: "cover" }}
                 />
                 <Image
-                  src="./assets/decoration12.jpg"
+                  src="./assets/c2.jpg"
                   alt="Wedding"
                   style={{ width: "100%", height: "200px", objectFit: "cover" }}
                 />
                 <Image
-                  src="./assets/deco22.jpg"
+                  src="./assets/c3.jpg"
                   alt="Wedding"
                   style={{ width: "100%", height: "200px", objectFit: "cover" }}
                 />
                 <Image
-                  src="./assets/decoration7.jpg"
+                  src="./assets/c4.jpg"
                   alt="Wedding"
                   style={{ width: "100%", height: "200px", objectFit: "cover" }}
                 />
@@ -201,4 +194,4 @@ function ServiceDecoration() {
   );
 }
 
-export default ServiceDecoration;
+export default ServiceMaitreceremonie;

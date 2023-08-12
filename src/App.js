@@ -13,6 +13,8 @@ import AboutUsPage from "./pages/AboutUs";
 import ServiceParticulier from "./pages/ServiceParticulier";
 import ServiceSecurite from "./pages/ServiceSecurite";
 import ServiceDecoration from "./pages/ServiceDecoration";
+import ServiceMaitreceremonie from "./pages/ServiceMaitreceremonie";
+import ServiceFilledhonneur from "./pages/ServiceFilledhonneur";
 function App() {
   return (
     <div className="App">
@@ -25,6 +27,11 @@ function App() {
           <Route path="/protocolat" element={<ServiceParticulier />} />
           <Route path="/securite" element={<ServiceSecurite />} />
           <Route path="/decoration" element={<ServiceDecoration />} />
+          <Route
+            path="/maitredeceremonie"
+            element={<ServiceMaitreceremonie />}
+          />
+          <Route path="/filled'honneur" element={<ServiceFilledhonneur />} />
         </Routes>
       </Router>
     </div>

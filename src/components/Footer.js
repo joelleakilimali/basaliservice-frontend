@@ -1,6 +1,10 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faPhone, faEnvelope } from "@fortawesome/free-solid-svg-icons";
-import { faFacebook, faInstagram } from "@fortawesome/free-brands-svg-icons";
+import {
+  faFacebook,
+  faInstagram,
+  faWhatsapp,
+} from "@fortawesome/free-brands-svg-icons";
 import { library } from "@fortawesome/fontawesome-svg-core";
 
 import "./footer.css";
@@ -12,8 +16,8 @@ function Footer() {
         <div className="footer__column">
           <h3 className="footer__title">About Us</h3>
           <p className="footer__text">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non
-            nulla et sapien efficitur imperdiet.{" "}
+            Basaliservice Agence événementielle, est une agence créé par un
+            groupe des jeunes ambitueux et motivés pour le changement.{" "}
           </p>
         </div>
         <div className="footer__column">
@@ -21,15 +25,22 @@ function Footer() {
           <ul className="footer__contact-list">
             <li className="footer__contact-item">
               <FontAwesomeIcon icon={faPhone} />
-              <a href="tel:+123456789">+1 (234) 567-89</a>
+              <a href="tel:+123456789">+243812952248</a>
+              <a href="tel:+123456789"> //+243973523189</a>
             </li>
             <li className="footer__contact-item">
               <FontAwesomeIcon icon={faEnvelope} />
-              <a href="mailto:contact@example.com">contact@example.com</a>
+              <a href="mailto:contact@example.com">basaliservice@gmail.com</a>
             </li>
             <li className="footer__contact-item">
-              <FontAwesomeIcon icon={faEnvelope} />
-              <a href="https://wa.me/123456789">WhatsApp</a>
+              <FontAwesomeIcon icon={faWhatsapp} />
+              <a href="https://wa.me/123456789">+243904874291</a>
+            </li>
+            <li className="footer__contact-item">
+              <FontAwesomeIcon icon={faInstagram} />
+              <a href="https://instagram.com/basaliservice?igshid=NTc4MTIwNjQ2YQ==">
+                BASALIservice
+              </a>
             </li>
           </ul>
         </div>
@@ -42,7 +53,7 @@ function Footer() {
               </a>
             </li>
             <li className="footer__social-item">
-              <a href="https://www.instagram.com">
+              <a href="https://instagram.com/basaliservice?igshid=NTc4MTIwNjQ2YQ==">
                 <FontAwesomeIcon icon={faInstagram} />
               </a>
             </li>
