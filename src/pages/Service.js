@@ -62,7 +62,13 @@ function Service() {
       <div>
         <Navbar />
       </div>
-      <div className="bg-gradient-to-r from-black to-gray-900 min-h-screen text-gray-200 relative">
+      <div
+        className=" flex flex-col bg-gradient-to-r from-black to-gray-900 min-h-screen text-gray-200 relative"
+        style={{
+          alignItems: "center",
+          justifyContent: "center",
+        }}
+      >
         <h1 className="text-white font-bold text-3xl py-10">Nos Tarifs</h1>
         <div className="mx-10 my-10">
           <div className="containerService m-10 ">

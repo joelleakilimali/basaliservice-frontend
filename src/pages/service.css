@@ -1,7 +1,10 @@
 .containerService {
   display: flex;
+  justify-content: "center";
+  align-items: "center";
   flex-wrap: wrap;
-  gap: 120px;
+  border: "2px solid green";
+  gap: 4rem;
   align-items: center;
   padding: 20px;
 }
