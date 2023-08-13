@@ -56,7 +56,7 @@ function Navbar() {
           <div class="dropdown mx-20">
             <button>Service</button>
             <div class="dropdown-content">
-              <a href="#">Protocol</a>
+              <a href="/protocolat">Protocol</a>
               <a href="/securite">Securite</a>
               <a href="/maitredeceremonie">Maitre de ceremonie</a>
               <a href="/decoration">Decoration</a>
