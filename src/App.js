@@ -31,7 +31,7 @@ function App() {
             path="/maitredeceremonie"
             element={<ServiceMaitreceremonie />}
           />
-          <Route path="/filled'honneur" element={<ServiceFilledhonneur />} />
+          <Route path="/fille'honneur" element={<ServiceFilledhonneur />} />
         </Routes>
       </Router>
     </div>

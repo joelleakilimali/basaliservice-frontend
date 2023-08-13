@@ -363,7 +363,7 @@ function Home() {
               actions={[
                 <Link
                   className="py-10 text-lg"
-                  to="/filled'honneur"
+                  to="/fille'honneur"
                   style={{
                     textDecoration: "none",
                     color: "#fadb14",

@@ -52,6 +52,18 @@ function Navbar() {
             About Us
           </Link>
         </li>
+        <li>
+          <div class="dropdown mx-20">
+            <button>Service</button>
+            <div class="dropdown-content">
+              <a href="#">Protocol</a>
+              <a href="/securite">Securite</a>
+              <a href="/maitredeceremonie">Maitre de ceremonie</a>
+              <a href="/decoration">Decoration</a>
+              <a href="/fille'honneur">Fille d'honneur</a>
+            </div>
+          </div>
+        </li>
       </ul>
     </nav>
   );
