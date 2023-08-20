@@ -208,7 +208,7 @@ function Home() {
                         ></textarea>
                         <span
                           className="absolute  "
-                          style={{ marginLeft: "27rem", marginTop: "6rem" }}
+                          style={{ marginLeft: "18rem", marginTop: "6rem" }}
                         >
                           <FontAwesomeIcon
                             icon={faPaperPlane}

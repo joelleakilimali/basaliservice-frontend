@@ -2,8 +2,19 @@ import React from "react";
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
 import { Image } from "antd";
+import CheckboxList from "../components/CheckboxList";
 
 function ServiceDecoration() {
+  const services = [
+    "Decorer la salle",
+    "Fournir des decorations",
+    "Fournir des fleurs naturelles",
+    "Decoration Interieur et exterieur",
+    "Decoration Africaine",
+    "Decoration Europeene",
+    "Decoration Mixte",
+    "Feu d'artifice",
+  ];
   return (
     <div>
       <Navbar />
@@ -103,96 +114,7 @@ function ServiceDecoration() {
                 {/* Add more images here */}
               </div>
             </div>
-
-            <div>
-              <h2
-                className=" text-bold text-yellow-500 text-3xl my-5 py-8 "
-                style={{ marginBottom: "10px" }}
-              >
-                Cochez vos Preferences
-              </h2>
-              <div
-                className="my-10 py-10"
-                style={{
-                  display: "grid",
-                  gridTemplateColumns: "repeat(auto-fit, minmax(200px, 1fr))",
-                  gridGap: "20px",
-                }}
-              >
-                <div
-                  style={{
-                    display: "flex",
-                    alignItems: "center",
-                    marginBottom: "10px",
-                  }}
-                >
-                  <input type="checkbox" id="service1" />
-                  <label htmlFor="service1" style={{ marginLeft: "10px" }}>
-                    Accueillir les invités et les accompagner sur leurs table
-                  </label>
-                </div>
-                <div
-                  style={{
-                    display: "flex",
-                    alignItems: "center",
-                    marginBottom: "10px",
-                  }}
-                >
-                  <input type="checkbox" id="service2" />
-                  <label htmlFor="service2" style={{ marginLeft: "10px" }}>
-                    Distribuer les programs et d'autres supports necessaire
-                  </label>
-                </div>
-                <div
-                  style={{
-                    display: "flex",
-                    alignItems: "center",
-                    marginBottom: "10px",
-                  }}
-                >
-                  <input type="checkbox" id="service3" />
-                  <label htmlFor="service3" style={{ marginLeft: "10px" }}>
-                    Mettre a disposition un MC (Maitre de Ceremonie)
-                  </label>
-                </div>
-                <div
-                  style={{
-                    display: "flex",
-                    alignItems: "center",
-                    marginBottom: "10px",
-                  }}
-                >
-                  <input type="checkbox" id="service3" />
-                  <label htmlFor="service3" style={{ marginLeft: "10px" }}>
-                    Assister a l'arrangement et placement des chaises et tables
-                  </label>
-                </div>
-                <div
-                  style={{
-                    display: "flex",
-                    alignItems: "center",
-                    marginBottom: "10px",
-                  }}
-                >
-                  <input type="checkbox" id="service1" />
-                  <label htmlFor="service1" style={{ marginLeft: "10px" }}>
-                    Accueillir les invités et les accompagner sur leurs table
-                  </label>
-                </div>
-                <div
-                  style={{
-                    display: "flex",
-                    alignItems: "center",
-                    marginBottom: "10px",
-                  }}
-                >
-                  <input type="checkbox" id="service3" />
-                  <label htmlFor="service3" style={{ marginLeft: "10px" }}>
-                    Mettre a disposition un MC (Maitre de Ceremonie)
-                  </label>
-                </div>
-              </div>
-            </div>
+            <CheckboxList labels={services} />
           </div>
         </div>
       </div>

@@ -23,14 +23,17 @@ function Navbar() {
         /> */}
         <h2>Basali Service</h2>
       </div>
-      <ul className="navbar__links">
+      <ul
+        className="navbar__links"
+        style={{ fontFamily: "text-font-open-sans", fontSize: "20px" }}
+      >
         <li className="navbar__link">
           <Link
             to="/"
             className="navbar__link"
             style={{ textDecoration: "none" }}
           >
-            Home
+            Accueil
           </Link>
         </li>
         <li className="navbar__link">
@@ -49,12 +52,12 @@ function Navbar() {
         </li>
         <li className="navbar__link">
           <Link to="/apropos" style={{ textDecoration: "none" }}>
-            About Us
+            A propos
           </Link>
         </li>
         <li>
           <div class="dropdown mx-20">
-            <button>Service</button>
+            <button>Services</button>
             <div class="dropdown-content">
               <a href="/protocolat">Protocol</a>
               <a href="/securite">Securite</a>

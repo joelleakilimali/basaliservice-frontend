@@ -2,8 +2,19 @@ import React from "react";
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
 import { Image } from "antd";
+import CheckboxList from "../components/CheckboxList";
 
 function ServiceFilledhonneur() {
+  const services = [
+    "Fournir les vetements",
+    "Coiffure ",
+    "MakeUp",
+    "Fournir les vetements",
+    "Coiffure ",
+    "MakeUp",
+    "Coiffure ",
+    "MakeUp",
+  ];
   return (
     <div>
       <Navbar />
@@ -102,7 +113,7 @@ function ServiceFilledhonneur() {
               </div>
             </div>
 
-            <div>
+            {/* <div>
               <h2
                 className=" text-bold text-yellow-500 text-3xl my-5 py-8 "
                 style={{ marginBottom: "10px" }}
@@ -190,7 +201,8 @@ function ServiceFilledhonneur() {
                   </label>
                 </div>
               </div>
-            </div>
+            </div> */}
+            <CheckboxList labels={services} />
           </div>
         </div>
       </div>
