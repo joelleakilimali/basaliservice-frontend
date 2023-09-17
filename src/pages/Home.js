@@ -34,22 +34,22 @@ function Home() {
     );
   };
   return (
-    <div className="">
+    <div className="overflow-hidden">
       <Navbar />
       <div
         className="contenaireHome text-yellow font-bold bg-gradient-to-r from-black to-gray-900 min-h-screen  "
         style={{ fontFamily: "text-font-open-sans", fontSize: "100px" }}
       >
         <div
-          className="img_text flex  "
+          className="flex  "
           style={{
             display: "flex",
             flexWrap: "wrap",
             alignItems: "center",
             justifyContent: "center",
-            padding: "5px",
-            margin: "10px",
+
             gap: "5rem",
+            // backgroundColor: "red",
           }}
         >
           <div
@@ -65,7 +65,7 @@ function Home() {
             <div
               style={{
                 fontFamily: "text-font-open-sans",
-                fontSize: "100px",
+                fontSize: "40px",
               }}
             >
               <h1 className=" text-white prose ">Basali Service </h1>
@@ -86,7 +86,6 @@ function Home() {
               display: "flex",
               justifyContent: "center",
               alignItems: "center",
-              height: "100vh",
               width: "40%",
             }}
           >
@@ -97,130 +96,202 @@ function Home() {
             </div>
           </div>
         </div>
-        <hr className="w-[50%] m-14"></hr>
-        <div className="w-full my-10 ">
-          <div
-            className="flex  sm:flex-row justify-between items-center w-full mx-5"
-            style={{
-              display: "flex",
-              flexWrap: "wrap",
-              flexDirection: "row",
-              justifyContent: "center",
-              alignItems: "center",
-              gap: "6rem",
-            }}
-          >
-            <div
-              className="flex flex-col justify-center items-center  text-gray-200"
-              style={{
-                alignItems: "center",
-                justifyContent: "center",
-
-                width: "45%",
-              }}
-            >
-              <div className="" style={{ fontSize: "50px" }}>
-                <h1 className="font-bold  text-yellow-600 leading-[5rem]">
-                  Avez-vous un evenement?
-                </h1>
-              </div>
-              <div>
-                <p style={{ fontSize: "30px", margin: "5rem 0px" }}>
-                  Nous sommes toujours proche de vous pour vous accompagner à la
-                  réussite de vos manisfestations, alors n'hésitez pas de nous
-                  contacter en cas de besoin.
-                </p>
-                <div style={{ marginBottom: "10rem" }}></div>
-              </div>
+        <hr className="w-[50%] my-8"></hr>
+        {
+          // <div className="w-full my-10">
+          //   <div
+          //     className="flex sm:flex-row justify-between items-center w-full mx-5"
+          //     style={{
+          //       display: "flex",
+          //       flexWrap: "wrap",
+          //       flexDirection: "row",
+          //       justifyContent: "center",
+          //       alignItems: "center",
+          //       gap: "2rem",
+          //       backgroundColor: "red",
+          //     }}
+          //   >
+          //     <div
+          //       className="flex flex-col justify-center items-center text-gray-200"
+          //       style={{
+          //         alignItems: "center",
+          //         justifyContent: "center",
+          //         width: "45%",
+          //         backgroundColor: "green",
+          //       }}
+          //     >
+          //       <div className="text-4xl font-bold text-yellow-600 leading-[5rem]">
+          //         <h1>Avez-vous un événement?</h1>
+          //       </div>
+          //       <div>
+          //         <p className="text-2xl my-10">
+          //           Nous sommes toujours à vos côtés pour vous accompagner dans la
+          //           réussite de vos manifestations. N'hésitez pas à nous contacter
+          //           en cas de besoin.
+          //         </p>
+          //       </div>
+          //     </div>
+          //     <div
+          //       className="w-full"
+          //       style={{
+          //         borderWidth: "5px",
+          //         width: "50%",
+          //         borderRadius: "10px",
+          //         backgroundColor: "yellow",
+          //         padding: "40px",
+          //       }}
+          //     >
+          //       <div>
+          //         <div className="text-4xl font-bold text-yellow-600 leading-[2rem]">
+          //           <h1>Contactez-nous !</h1>
+          //         </div>
+          //         <form
+          //           action="#"
+          //           method="POST"
+          //           className="flex flex-col items-center justify-center"
+          //           style={{
+          //             alignItems: "center",
+          //             justifyContent: "center",
+          //             flexWrap: "wrap",
+          //             fontSize: "2rem",
+          //             color: "white",
+          //             gap: "3rem",
+          //           }}
+          //         >
+          //           <div
+          //             className="w-full"
+          //             style={{ fontSize: "18px", color: "black" }}
+          //           >
+          //             <label
+          //               htmlFor="email"
+          //               className="block font-bold mb-2 text-white"
+          //             >
+          //               Adresse Email:
+          //             </label>
+          //             <div className="relative">
+          //               <span className="absolute left-3">
+          //                 <i className="fas fa-envelope"></i>
+          //               </span>
+          //               <input
+          //                 type="email"
+          //                 id="email"
+          //                 name="email"
+          //                 placeholder="example@example.com"
+          //                 className="pl-2 py-5 border border-gray-400 rounded-lg w-full focus:outline-none focus:border-blue-500"
+          //               />
+          //             </div>
+          //           </div>
+          //           <div
+          //             className="mb-6 w-full"
+          //             style={{ fontSize: "18px", color: "black" }}
+          //           >
+          //             <label
+          //               htmlFor="comment"
+          //               className="block font-bold mb-2 text-white"
+          //             >
+          //               Commentaire:
+          //             </label>
+          //             <div className="relative">
+          //               <span className="absolute left-3">
+          //                 <i className="fas fa-comment"></i>
+          //               </span>
+          //               <div className="relative flex">
+          //                 <textarea
+          //                   id="comment"
+          //                   name="comment"
+          //                   placeholder="Dites-nous ce que vous voulez .."
+          //                   className="pl-2 py-5 pr-4 border border-gray-400 rounded-lg w-full h-32 resize-none focus:outline-none focus:border-blue-500"
+          //                 ></textarea>
+          //               </div>
+          //             </div>
+          //           </div>
+          //         </form>
+          //       </div>
+          //     </div>
+          //   </div>
+          // </div>
+        }
+        <div className="w-full my-10">
+          <div className="flex flex-col sm:flex-row justify-between items-center w-full mx-5  p-6 rounded-lg shadow-lg">
+            <div className="flex flex-col justify-center items-center text-gray-200 w-full sm:w-2/5  p-6 rounded-lg shadow-lg">
+              <h1 className="text-4xl font-bold text-yellow-600 mb-4">
+                Avez-vous un événement ?
+              </h1>
+              <p className="text-xl text-white">
+                Nous sommes toujours à vos côtés pour vous accompagner dans la
+                réussite de vos manifestations. N'hésitez pas à nous contacter
+                en cas de besoin.
+              </p>
             </div>
 
             <div
-              className="w-full p-20"
-              style={{ borderWidth: "5px", width: "40%", borderRadius: "10px" }}
+              className="w-full sm:w-3/5 border-2 p-6 rounded-lg shadow-lg"
+              style={{
+                alignItems: "center",
+                display: "flex",
+                flexDirection: "column",
+              }}
             >
-              <div>
-                <div style={{ fontSize: "50px" }}>
-                  <h1 className="font-bold  text-yellow-600 leading-[5rem]">
-                    Contactez-nous !
-                  </h1>
+              <h1 className="text-4xl font-bold text-yellow-600 ">
+                Contactez-nous !
+              </h1>
+
+              <form
+                action="#"
+                method="POST"
+                className="flex flex-col items-center justify-center"
+                style={{
+                  width: "80%",
+                  alignItems: "center",
+                  // background: "red",
+                }}
+              >
+                <label
+                  htmlFor="email"
+                  className="block font-bold  text-white "
+                  style={{ fontSize: "20px" }}
+                >
+                  Adresse Email:
+                </label>
+                <div className="relative w-full ">
+                  <span className="absolute left-3 top-1/2 transform -translate-y-1/2">
+                    <i className="fas fa-envelope"></i>
+                  </span>
+                  <input
+                    type="email"
+                    id="email"
+                    name="email"
+                    placeholder="example@example.com"
+                    className="pl-10 py-2 text-lg border border-gray-400 rounded-lg w-full focus:outline-none focus:border-blue-500"
+                  />
                 </div>
 
-                <form
-                  action="#"
-                  method="POST"
-                  className="flex flex-col items-center justify-center"
-                  style={{
-                    alignItems: "center",
-                    justifyContent: "center",
-                    flexWrap: "wrap",
-                    fontSize: "30px",
-                    color: "white",
-                    gap: "3rem",
-                  }}
+                <label
+                  htmlFor="comment"
+                  className="block font-bold mb-2 text-white"
+                  style={{ fontSize: "20px" }}
                 >
-                  <div
-                    className=" w-full"
-                    style={{
-                      fontSize: "18px",
-                      color: "black",
-                    }}
-                  >
-                    <label
-                      htmlFor="email"
-                      className="block  font-bold mb-2 text-white"
-                    >
-                      Adresse Email:
-                    </label>
-                    <div className="relative">
-                      <span className="absolute left-3 ">
-                        <i className="fas fa-envelope"></i>
-                      </span>
-                      <input
-                        type="email"
-                        id="email"
-                        name="email"
-                        placeholder="example@example.com"
-                        className="pl-2 py-5 border  border-gray-400 rounded-lg w-full focus:outline-none focus:border-blue-500"
-                      />
-                    </div>
-                  </div>
+                  Commentaire:
+                </label>
+                <div className="relative w-full mb-6">
+                  <span className="absolute left-3 top-1/2 transform -translate-y-1/2">
+                    <i className="fas fa-comment"></i>
+                  </span>
+                  <textarea
+                    id="comment"
+                    name="comment"
+                    placeholder="Dites-nous ce que vous voulez .."
+                    className="pl-10 py-2 pr-4 text-lg border border-gray-400 rounded-lg w-full h-32 resize-none focus:outline-none focus:border-blue-500"
+                  ></textarea>
+                </div>
 
-                  <div
-                    className="mb-6 w-full"
-                    style={{ fontSize: "18px", color: "black" }}
-                  >
-                    <label
-                      htmlFor="comment"
-                      className="block  font-bold mb-2 text-white"
-                    >
-                      Commentaire:
-                    </label>
-                    <div className="relative">
-                      <span className="absolute left-3 ">
-                        <i className="fas fa-comment"></i>
-                      </span>
-                      <div className="relative flex">
-                        <textarea
-                          id="comment"
-                          name="comment"
-                          placeholder="Dites-nous ce que vous voulez .."
-                          className="pl-2 py-5 pr-4 border border-gray-400 rounded-lg w-full h-32 resize-none focus:outline-none focus:border-blue-500"
-                        ></textarea>
-                        <span
-                          className="absolute  "
-                          style={{ marginLeft: "18rem", marginTop: "6rem" }}
-                        >
-                          <FontAwesomeIcon
-                            icon={faPaperPlane}
-                            width={40}
-                            onClick={sendEmail}
-                          />
-                        </span>
-                      </div>
-                    </div>
-                  </div>
-                </form>
-              </div>
+                <button
+                  type="submit"
+                  className="bg-blue-600 hover:bg-blue-700 text-white py-3 px-6 rounded-lg text-lg shadow-lg transition duration-300 transform hover:scale-105"
+                >
+                  <i className="fas fa-paper-plane mr-2"></i>Envoyer
+                </button>
+              </form>
             </div>
           </div>
         </div>

@@ -19,18 +19,21 @@ function Navbar() {
         {/* <img
           src="./assets/logo.jpg"
           alt="My Website Logo"
-          className="logoimg"z
+          className="logoimg"
         /> */}
         <h2>Basali Service</h2>
       </div>
-      <ul className="navbar__links">
+      <ul
+        className="navbar__links"
+        style={{ fontFamily: "text-font-open-sans", fontSize: "20px" }}
+      >
         <li className="navbar__link">
           <Link
             to="/"
             className="navbar__link"
             style={{ textDecoration: "none" }}
           >
-            Home
+            Accueil
           </Link>
         </li>
         <li className="navbar__link">
@@ -49,31 +52,30 @@ function Navbar() {
         </li>
         <li className="navbar__link">
           <Link to="/apropos" style={{ textDecoration: "none" }}>
-            About Us
+            A propos
           </Link>
         </li>
-        <li className="navbar__dropdown">
-          <button className="navbar__dropdown-toggle" onClick={toggleDropdown}>
-            Services
-            <i className="fas fa-caret-down"></i>
-          </button>
-          <ul className={`navbar__dropdown-menu ${dropdownOpen ? "open" : ""}`}>
-            <li className="navbar__dropdown-menu-item">
-              <a href="/protocolat">Protocol</a>
-            </li>
-            <li className="navbar__dropdown-menu-item">
-              <a href="/securite">Securite</a>
-            </li>
-            <li className="navbar__dropdown-menu-item">
-              <a href="/maitredeceremonie">Maitre de ceremonie</a>
-            </li>
-            <li className="navbar__dropdown-menu-item">
-              <a href="/decoration">Decoration</a>
-            </li>
-            <li className="navbar__dropdown-menu-item">
-              <a href="/fille'honneur">Fille d'honneur</a>
-            </li>
-          </ul>
+        <li>
+          <div class="dropdown mx-20">
+            <button>Services</button>
+            <div class="dropdown-content">
+              <Link to="/securite" style={{ textDecoration: "none" }}>
+                Securite
+              </Link>
+              <Link to="/protocolat" style={{ textDecoration: "none" }}>
+                Protocol
+              </Link>
+              <Link to="/maitredeceremonie" style={{ textDecoration: "none" }}>
+                Maitre de ceremonie
+              </Link>
+              <Link to="/decoration" style={{ textDecoration: "none" }}>
+                Decoration
+              </Link>
+              <Link to="/fille'honneur" style={{ textDecoration: "none" }}>
+                Fille d'honneur
+              </Link>
+            </div>
+          </div>
         </li>
       </ul>
     </nav>
