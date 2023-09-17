@@ -15,6 +15,7 @@
 .navbar__logo h2 {
   color: #f7d731;
   width: 100%;
+  font-size: 1.5rem;
 }
 .navbar__logo {
   width: 15%;
@@ -33,6 +34,7 @@
   margin-left: 2rem;
   color: #fff;
   text-decoration: none;
+  font-size: 1.3rem;
 }
 
 .navbar__link:hover {
@@ -40,12 +42,12 @@
 }
 
 .navbar__link:first-child {
-  margin-left: 0;
+  margin-left: 1rem;
 }
 
 .navbar__dropdown {
   position: relative;
-  margin-left: 2rem;
+  margin-left: 1rem;
 }
 
 .navbar__dropdown-toggle {
@@ -55,8 +57,13 @@
   border: none;
   cursor: pointer;
   color: #fff;
+  margin-right: 4rem;
+  font-size: 1.3rem;
 }
 
+.navbar__dropdown-toggle:hover {
+  color: #f7d731;
+}
 .navbar__dropdown-toggle i {
   margin-left: 0.5rem;
 }
@@ -80,7 +87,7 @@
 }
 
 .navbar__dropdown-menu-item {
-  margin: 0.5rem 0;
+  margin: 1rem 0;
 }
 
 .navbar__dropdown-menu-item a {
@@ -92,9 +99,8 @@
   color: #f7d731;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (min-width: 768px) {
   .navbar {
-    flex-direction: column;
     padding: 0.5rem;
   }
 
@@ -103,49 +109,27 @@
   }
 
   .navbar__links {
-    flex-direction: column;
+    float: left;
   }
 
   .navbar__link {
-    margin: 0.5rem 0;
+    margin-left: 1rem;
+  }
+  .navbar__dropdown {
+    float: left;
   }
 }
-
-.dropdown {
-  position: relative;
-  display: inline-block;
-}
-
-.dropdown button {
-  background-color: #d6b10a;
-  color: white;
-  padding: 10px 20px;
-  border: none;
-  cursor: pointer;
-}
-.dropdown-content {
-  display: none;
-  position: absolute;
-  background-color: black;
-  justify-content: centerS;
-  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
-  z-index: 1;
-}
-
-/* Style for each dropdown item */
-.dropdown-content a {
-  color: #d6b10a;
-  padding: 12px 70px;
-  text-decoration: none;
-  display: block;
-  cursor: pointer;
-}
-
-.dropdown-content a:hover {
-  background-color: #f1f1f1;
-}
-
-/* Show dropdown content when hovering over dropdown container */
-.dropdown:hover .dropdown-content {
-  display: block;
+@media only screen and (max-width: 300px) {
+  .navbar {
+    position: static;
+  }
+  .navbar .navbar__links {
+    position: static;
+  }
+  .navbar .navbar__links .navbar__link {
+    float: left;
+  }
+  .navbar .navbar__dropdown {
+    float: left;
+  }
 }

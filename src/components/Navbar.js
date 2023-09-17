@@ -19,21 +19,18 @@ function Navbar() {
         {/* <img
           src="./assets/logo.jpg"
           alt="My Website Logo"
-          className="logoimg"
+          className="logoimg"z
         /> */}
         <h2>Basali Service</h2>
       </div>
-      <ul
-        className="navbar__links"
-        style={{ fontFamily: "text-font-open-sans", fontSize: "20px" }}
-      >
+      <ul className="navbar__links">
         <li className="navbar__link">
           <Link
             to="/"
             className="navbar__link"
             style={{ textDecoration: "none" }}
           >
-            Accueil
+            Home
           </Link>
         </li>
         <li className="navbar__link">
@@ -52,20 +49,31 @@ function Navbar() {
         </li>
         <li className="navbar__link">
           <Link to="/apropos" style={{ textDecoration: "none" }}>
-            A propos
+            About Us
           </Link>
         </li>
-        <li>
-          <div class="dropdown mx-20">
-            <button>Services</button>
-            <div class="dropdown-content">
+        <li className="navbar__dropdown">
+          <button className="navbar__dropdown-toggle" onClick={toggleDropdown}>
+            Services
+            <i className="fas fa-caret-down"></i>
+          </button>
+          <ul className={`navbar__dropdown-menu ${dropdownOpen ? "open" : ""}`}>
+            <li className="navbar__dropdown-menu-item">
               <a href="/protocolat">Protocol</a>
+            </li>
+            <li className="navbar__dropdown-menu-item">
               <a href="/securite">Securite</a>
+            </li>
+            <li className="navbar__dropdown-menu-item">
               <a href="/maitredeceremonie">Maitre de ceremonie</a>
+            </li>
+            <li className="navbar__dropdown-menu-item">
               <a href="/decoration">Decoration</a>
+            </li>
+            <li className="navbar__dropdown-menu-item">
               <a href="/fille'honneur">Fille d'honneur</a>
-            </div>
-          </div>
+            </li>
+          </ul>
         </li>
       </ul>
     </nav>
