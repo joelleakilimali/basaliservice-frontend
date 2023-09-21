@@ -7,8 +7,8 @@ import Slider from "react-slick";
 function AlbumPage() {
   //const [selectedPicture, setSelectedPicture] = useState(null);
   const images = [
-    "/assets/logo.jpg",
-    "/assets/BSprotocol13.jpg",
+    // "/assets/logo.jpg",
+    // "/assets/BSprotocol13.jpg",
     "/assets/BSprotocol8.jpg",
     "/assets/BSprotocol.jpg",
     "/assets/BSprotocol3.jpg",
@@ -61,14 +61,22 @@ function AlbumPage() {
       <div>
         <Navbar />
       </div>
-      <div className="bg-gradient-to-r from-black to-gray-900 min-h-screen text-gray-200 relative">
+      <div className="flex flex-col bg-gradient-to-r from-black to-gray-900 min-h-screen text-gray-200 relative py-24">
         <h1 className="text-white font-bold text-3xl py-10">Nos Photos</h1>
         <div className="pictures-container">
-          <div className="picture-modal">
+          <div
+            className="picture-modal flex flex-col "
+            style={{ height: "1500px" }}
+          >
             <div
               className="picture-modal-content"
-              style={{ backgroundImage: `url(${selectedPicture})` }}
+              style={{
+                backgroundImage: `url(${selectedPicture})`,
+                width: "1000px",
+                height: "800px",
+              }}
             ></div>
+            <div style={{ marginTop: "30rem" }}></div>
           </div>
           <Slider {...settings}>
             {images.map((image, index) => (
@@ -83,6 +91,7 @@ function AlbumPage() {
                   src={image}
                   alt="photo_mariage"
                   className="slider-image-img"
+                  width="200px"
                 />
               </div>
             ))}

@@ -53,6 +53,20 @@ function Home() {
           }}
         >
           <div
+            style={{
+              display: "flex",
+              justifyContent: "center",
+              alignItems: "center",
+              width: "40%",
+            }}
+          >
+            <div style={cardStyle}>
+              <Card>
+                <img src="./assets/logo.jpg" alt="MyImage" style={imageStyle} />
+              </Card>
+            </div>
+          </div>
+          <div
             className=" "
             style={{
               display: "flex",
@@ -79,20 +93,6 @@ function Home() {
                 épauler dans toutes vos démarches pour la réussite de votre
                 activité.
               </p>
-            </div>
-          </div>
-          <div
-            style={{
-              display: "flex",
-              justifyContent: "center",
-              alignItems: "center",
-              width: "40%",
-            }}
-          >
-            <div style={cardStyle}>
-              <Card>
-                <img src="./assets/logo.jpg" alt="MyImage" style={imageStyle} />
-              </Card>
             </div>
           </div>
         </div>

@@ -2,19 +2,30 @@
   position: relative;
   overflow: hidden;
   max-width: 100%;
-  height: 70vh; /* Adjust the height as desired */
-  margin: 0 auto;
+  height: 100vh; /* Adjust the height as desired */
+  margin: -10px auto;
 }
 
 .slider-image {
   position: relative;
   height: 50%;
+  transition: transform 0.2s ease-in-out;
 }
 
 .slider-image-img {
   width: 100%;
   height: 100%;
-  object-fit: cover;
+  object-fit: contain; /* Change 'cover' to 'contain' if you want to fit the image within the container without cropping */
+  border-radius: 10px; /* Add rounded corners if desired */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); /* Add a subtle shadow for depth */
+  transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+}
+.slider-image-img:hover {
+  transform: scale(1.05); /* Enlarge the image on hover */
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.5); /* Enhance the shadow on hover */
+}
+.slider-image:hover {
+  transform: scale(1.05); /* Enlarge the image on hover */
 }
 
 .slick-dots {
@@ -34,27 +45,37 @@
   text-align: center;
   margin-left: -2.5em;
 }
+.slick-dots .slick-active {
+  background-color: gold; /* Change to your desired active dot color */
+}
 
 .slick-prev,
 .slick-next {
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
-  padding: 10px;
+  width: 100px; /* Adjust the width as desired */
+  height: 70px; /* Adjust the height as desired */
+  font-size: 24px; /* Adjust the font size as desired */
+  background-color: transparent; /* Make the background transparent */
+  border: 2px solid gold; /* Add a gold border */
   color: gold;
-  background-color: black;
-  border: none;
+  border-radius: 50%; /* Make them circular */
+  display: flex;
+  justify-content: center;
+  align-items: center;
   cursor: pointer;
+  transition: background-color 0.3s, color 0.3s, transform 0.3s;
 }
-
 .slick-next {
   right: 0;
 }
 
 .slick-prev:hover,
 .slick-next:hover {
-  background-color: gold;
-  color: black;
+  background-color: gold; /* Change to your desired hover background color */
+  color: black; /* Change to your desired hover text color */
+  transform: translateY(-50%) scale(1.2); /* Add a scaling effect on hover */
 }
 
 .picture-modal {
@@ -65,14 +86,24 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: rgba(0, 0, 0, 0.8);
+
+  transition: opacity 0.3s, visibility 0.3s;
+}
+
+.picture-modal.active {
+  opacity: 1;
+  visibility: visible;
 }
 
 .picture-modal-content {
   background-repeat: no-repeat;
-  background-size: contain;
+  background-size: cover; /* Change to 'cover' for a better fit */
   background-position: center;
-  padding: 20px;
-  width: 100%;
-  height: 90%;
+  /* padding: 20px; */
+  height: 100%;
+  width: 80%; /* Adjust the width as desired */
+  /* max-height: 80%; Limit the height to maintain aspect ratio */
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.5); /* Add a subtle shadow */
+  border-radius: 10px; /* Add rounded corners */
+  overflow: hidden; /* Hide overflowing content */
 }

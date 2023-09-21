@@ -60,12 +60,12 @@ const AboutUsPage = () => {
             </li>
           </ul>
           <div className="my-20" style={{ marginBottom: "40px" }}>
-            {/* <h2
+            <h2
               className=" text-bold text-yellow-400 text-3xl my-5 py-8"
               style={{ marginBottom: "10px" }}
             >
               Nos contacts
-            </h2> */}
+            </h2>
             <div
               style={{
                 display: "grid",
@@ -73,17 +73,17 @@ const AboutUsPage = () => {
                 gridGap: "20px",
               }}
             >
-              {/* <Image
+              <Image
                 src="./assets/BSprotocol13.jpg"
                 alt="Nos contacts"
                 style={{
                   width: "20%",
                   height: "100px",
                   objectFit: "fill",
-                  marginLeft: "625px",
+                  marginLeft: "430px",
                   marginBottom: "30px",
                 }}
-              /> */}
+              />
               {/* Add more images here */}
             </div>
           </div>
