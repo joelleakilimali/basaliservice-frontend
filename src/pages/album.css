@@ -111,9 +111,7 @@
   .pictures-container {
     height: 500px; /* Réglez la hauteur en fonction du contenu */
     margin: 0;
-    width: 95%; /* Ajustez la largeur selon vos besoins */
-    background-color: green;
-    border: 1px solid white;
+    width: 95%;
   }
   .slick-dots {
     display: flex;
