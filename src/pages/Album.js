@@ -61,12 +61,12 @@ function AlbumPage() {
       <div>
         <Navbar />
       </div>
-      <div className="flex flex-col bg-gradient-to-r from-black to-gray-900 min-h-screen text-gray-200 relative py-24">
-        <h1 className="text-white font-bold text-3xl py-10">Nos Photos</h1>
-        <div className="pictures-container">
+      <div className="flex flex-col bg-gradient-to-r from-black to-gray-900 min-h-screen text-gray-200 relative py-4">
+        <h1 className="text-white font-bold text-3xl py-3">Nos Photos</h1>
+        {/* {  <div className="pictures-container">
           <div
-            className="picture-modal flex flex-col "
-            style={{ height: "1500px" }}
+            className="picture-modal flex flex-col"
+            style={{ height: "80vh" }}
           >
             <div
               className="picture-modal-content"
@@ -91,7 +91,40 @@ function AlbumPage() {
                   src={image}
                   alt="photo_mariage"
                   className="slider-image-img"
-                  width="200px"
+                  style={{ width: "100%", height: "auto" }}
+                />
+              </div>
+            ))}
+          </Slider>
+        </div>} */}
+        <div className="pictures-container">
+          <div
+            className="picture-modal flex flex-col"
+            style={{ height: "80vh" }}
+          >
+            <div
+              className="picture-modal-content"
+              style={{
+                backgroundImage: `url(${selectedPicture})`,
+                width: "100%",
+                height: "100%",
+              }}
+            ></div>
+          </div>
+          <Slider {...settings}>
+            {images.map((image, index) => (
+              <div
+                key={index}
+                className={`slider-image ${
+                  currentImageIndex === index ? "active" : ""
+                }`}
+                onClick={() => handlePictureClick(index)}
+              >
+                <img
+                  src={image}
+                  alt="photo_mariage"
+                  className="slider-image-img"
+                  style={{ width: "100%", height: "auto" }}
                 />
               </div>
             ))}

@@ -107,3 +107,32 @@
   border-radius: 10px; /* Add rounded corners */
   overflow: hidden; /* Hide overflowing content */
 }
+@media (max-width: 768px) {
+  .pictures-container {
+    height: 500px; /* Réglez la hauteur en fonction du contenu */
+    margin: 0;
+    width: 95%; /* Ajustez la largeur selon vos besoins */
+    background-color: green;
+    border: 1px solid white;
+  }
+  .slick-dots {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 100%;
+    visibility: hidden;
+    height: 5rem;
+    width: auto; /* Ajustez la largeur en fonction du contenu */
+  }
+  .slider-image {
+    height: 100%; /* Occupe toute la hauteur disponible */
+  }
+  .slick-prev,
+  .slick-next {
+    width: 50px; /* Réduisez la taille des boutons de navigation */
+    height: 50px;
+    font-size: 16px; /* Réduisez la taille de la police */
+    top: 5%; /* Ajustez la position verticale des boutons */
+  }
+}
