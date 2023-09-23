@@ -71,16 +71,39 @@ const AboutUsPage = () => {
             </ul>
           </div>
           <div className="my-10">
-            <h2 className="text-bold text-yellow-400 text-3xl mb-5 py-2 text-center">
-              Nos contacts
-            </h2>
-            <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-5">
-              <Image
-                src="./assets/BSprotocol13.jpg"
-                alt="Nos contacts"
-                className="w-full h-auto"
-              />
-              {/* Ajoutez plus d'images ici */}
+            <div className="bg-gradient-to-r from-black to-gray-900 min-h-screen text-white">
+              <h1 className="heading p-5 text-yellow-400 text-3xl text-center">
+                Nos contacts
+              </h1>
+              <div className="content mx-5 my-10">
+                {/* Informations de contact */}
+                <div className="mb-10">
+                  <h2 className="section-heading text-yellow-400 text-2xl">
+                    Contactez-nous
+                  </h2>
+                  <div className="contact-info">
+                    <div className="mb-3">
+                      <i className="fas fa-phone text-yellow-400 mr-2"></i>
+                      <span>+243812952248</span>
+                    </div>
+                    <div className="mb-3">
+                      <i className="fas fa-envelope text-yellow-400 mr-2"></i>
+                      <span>basaliservice@gmail.com</span>
+                    </div>
+                    <div className="mb-3">
+                      <i className="fab fa-instagram text-yellow-400 mr-2"></i>
+                      <span>BASALIservice</span>
+                    </div>
+                    <div>
+                      <i className="fab fa-whatsapp text-yellow-400 mr-2"></i>
+                      <span>+243973523189</span>
+                    </div>
+                  </div>
+                </div>
+
+                {/* Autres sections */}
+                {/* ... Ajoutez d'autres sections ici ... */}
+              </div>
             </div>
           </div>
         </div>
